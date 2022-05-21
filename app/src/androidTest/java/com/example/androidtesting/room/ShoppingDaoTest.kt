@@ -63,6 +63,7 @@ class ShoppingDaoTest {
 
     @Test
     fun observeTotalPriceItemTest()= runBlockingTest {
+
         val shoppingItem= ShoppingItem("name",1,1f,"url",id=1)
         dao.insertShoppingItem(shoppingItem)
         val shoppingItem2= ShoppingItem("name",3,3f,"url",id=2)
